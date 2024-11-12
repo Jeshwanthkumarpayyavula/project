@@ -28,7 +28,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image = 'orangeflower.jpg'
+image = 'orange.jpg'
 img = cv2.imread(image)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
@@ -52,8 +52,10 @@ plt.axis('off')
 plt.show()
 ```
 ### OUTPUT :
-![image](https://github.com/Abburehan/project/assets/138849336/64256fc5-794e-4577-9d35-40ed7dd6408c)
-![image](https://github.com/Abburehan/project/assets/138849336/226055fc-5ceb-414f-bfcc-2b037c805ae0)
+![image](https://github.com/user-attachments/assets/53008698-686a-45ab-a2eb-3bafc2a22622)
+
+![image](https://github.com/user-attachments/assets/0e1aaff8-3d2c-4502-bee7-e882754371bb)
+
 
 ## II)Perform handwritting detection in an image
 ### Step1:
@@ -94,12 +96,13 @@ def detect_handwriting(image_path):
     plt.axis('off')
     plt.show()
 
-image_path = 'coffecup.jpg'
+image_path = 'hand.jpg'
 
 detect_handwriting(image_path)
 ```
 ### OUTPUT :
-![image](https://github.com/Abburehan/project/assets/138849336/24a761c0-2a1b-47dc-8c4e-9bd6bcd8a748)
+![image](https://github.com/user-attachments/assets/eb903193-dd38-4248-9f1a-27a699b7e81e)
+
 
 ## III)Perform object detection with label in an image
 ### Step1:
@@ -133,7 +136,7 @@ with open(file_name,'rt')as fpt:
 
 print(classLabels)
 print(len(classLabels))
-img=cv2.imread('bi.jpg')
+img=cv2.imread('bike.jpg')
 plt.imshow(img)
 plt.imshow(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 model.setInputSize(320,320)
